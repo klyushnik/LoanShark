@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enterpayment_rootLayout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDialogBackground"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".EnterPaymentFragment">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Enter Payment"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/enterpayment_owedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owed on record: $1000.99"
+        android:textAlignment="center"
+        android:textColor="@color/colorOrange"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/enterpayment_amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/enterpayment_payPartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_background_rectangle_blue"
+            android:text="Pay Part" />
+
+        <Button
+            android:id="@+id/enterpayment_payAllButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_background_rectangle_green"
+            android:text="Pay All" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enterpayment_cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ripple_background_rectangle_red"
+        android:text="@string/button_cancel" />
+</LinearLayout>

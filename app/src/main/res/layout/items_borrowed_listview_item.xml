@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_itemBorrowedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_package_variant_closed_white_24dp"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:paddingStart="20dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

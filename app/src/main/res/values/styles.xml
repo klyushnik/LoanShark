@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorBlack</item>
+        <item name="android:colorForeground">@color/white</item>
+        <item name="android:statusBarColor">@color/colorVeryDarkGrey</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorDialogBackground</item>
+    </style>
+
+
+    <style name="dialog_theme" parent="AppTheme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+</resources>

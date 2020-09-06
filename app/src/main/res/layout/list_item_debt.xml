@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listItemRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDialogBackground"
+    android:clipToPadding="false"
+    android:paddingStart="12dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="12dp">
+
+    <TextView
+        android:id="@+id/listItemRiskLevelTextView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/risk_level_bg"
+        android:backgroundTint="@color/colorGreen"
+        android:backgroundTintMode="src_in"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="W"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listItemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Humpfrey Wickleworth"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/listItemRiskLevelTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/monetaryLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100"
+        app:layout_constraintEnd_toStartOf="@+id/listItemDueDateTextView"
+        app:layout_constraintStart_toEndOf="@+id/listItemRiskLevelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/listItemNameTextView">
+
+        <TextView
+            android:id="@+id/listItemMonAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$115.67"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/listItemPercentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="20%"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/listItemInterestTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:text=" Weekly"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/listItemTimeLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/rounded_rectangle_bg"
+        android:backgroundTint="@color/colorRed"
+        android:elevation="3dp"
+        android:paddingStart="5dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="3dp"
+        android:text="OVERDUE"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listItemDueDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="29"
+        android:text="Jan 22"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listItemTimeLabelTextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="-12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listItemRiskLevelTextView" />
+
+    <LinearLayout
+        android:id="@+id/nonMonetaryLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/listItemDueDateTextView"
+        app:layout_constraintStart_toEndOf="@+id/listItemRiskLevelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/monetaryLinearLayout">
+
+        <TextView
+            android:id="@+id/listItemItemDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Lawnmower"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/listItemRiskLevelTextView"
+            app:layout_constraintTop_toBottomOf="@+id/listItemNameTextView" />
+
+        <TextView
+            android:id="@+id/listItemMoreItemCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:text=" + 2 items"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/listItemItemDescTextView"
+            app:layout_constraintTop_toBottomOf="@+id/listItemNameTextView" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

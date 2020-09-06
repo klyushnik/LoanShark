@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorDialogBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingStart="40dp"
+        android:paddingTop="25dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="25dp"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/borrowersNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_background_rectangle"
+        android:drawableLeft="@drawable/ic_currency_usd_white_36dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:text="Borrowers" />
+
+    <Button
+        android:id="@+id/creditorsNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_background_rectangle"
+        android:drawableLeft="@drawable/ic_currency_usd_off_white_36dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:text="Creditors" />
+
+    <Button
+        android:id="@+id/contactsNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_background_rectangle"
+        android:drawableLeft="@drawable/ic_account_supervisor_white_36dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:text="@string/toolbar_contacts" />
+
+    <Button
+        android:id="@+id/historyNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_background_rectangle"
+        android:drawableLeft="@drawable/ic_history_white_36dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:text="History" />
+
+    <Button
+        android:id="@+id/settingsNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_background_rectangle"
+        android:drawableLeft="@drawable/ic_settings_white_36dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/manualNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_background_rectangle"
+        android:drawableLeft="@drawable/ic_information_outline_white_36dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:text="Manual" />
+</LinearLayout>

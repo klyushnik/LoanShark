@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+body{
+	background-color: #131313;
+	padding: 10px 10px 10px 10px;
+}
+h1{
+	color: #ED7500;
+	font-family: sans-serif;
+	font-size: 2em;
+	font-variant: small-caps;
+}
+h2{
+	color: #00aeef;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+p{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1em;
+text-align: justify;
+line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<h2>Overview</h2>
+<p>Loan Shark is an app that lets you track of the money you lent to someone or borrowed from someone. It is not a replacement for Quicken or other finances app, but rather a quick and easy way to see if you owe someone something, or someone owes you. Loan Shark is also capable of tracking non-monetary debts; if you let someone borrow some stuff, you can enter it into the app as well. The debt payments can be split into parts, and the app will keep track of partial payments until the debt is paid off. Also, it is capable of calculating simple interest on any debts owed.</p>
+<h1>Borrower and Creditor records</h1>
+<h2>Overview</h2>
+<p>Borrower and Creditor records show the following information: name of a borrower/creditor, debt amount without interest or payments, interest rate and interest type, and the due date. If the debt is overdue, it will be marked accordingly. If the debt is non-monetary, the first item owed will be shown.</p>
+<p>To see the debt details and to pay off debts, click on the debt item.</p>
+<p>To delete a record, swipe it off the screen. Note that no history record will be created by simply deleting the debt; if you want to create the history record, open the debt details and hit Pay All button in the Payment screen.<p>
+<h2>Debt details</h2>
+<p>The debt details view shows the detailed informations about the debt. The very first details shown are the name and the phone number of the borrower or the creditor. You can make a phone call by tapping the phone number, provided it is a valid number. Next, there is the total money owed section; if the debt is non-monetary, the items taken will be shown. Information available is: initial amount, interest, and the total amount. Next, there is the payments section; it will show the total payments made to this debt. Finally, the due date and the initial date of the debt will be shown.</p>
+<p>To modify the debt, tap the modify button.</p>
+<p>To pay the debt fully or in part, hit the Payment button. If the debt is non-monetary, there will be a Return All button, which will let you return all the items. Any payment or return will add a history record.</p>
+<h2>Add or modify a record</h2>
+<p>To add a record, tap a plus icon on the top right of the screen. To edit a record, go to debt details screen and hit the Edit button.</p>
+<p>In the Add/Edit Record screen, select a person from the list. If the person is not on the list, hit the Add New button.</p>
+<p>Next, enter the reason for the debt. You can leave it blank, but it is helpful if you have multiple debts with the same person. Also, you can see the debt reason in the payment history details screen.</p>
+<p>Then, choose if a debt is monetary or non-monetary. If the debt is monetary, enter the amount borrowed or lent. If it's non-monetary, enter the items you borrowed or lent.</p>
+<p>The Interest switch determines if a debt has interest. The interest percentage is determined by the Simple Interest formula i=Prt, where i is interest, P is principal (initial) amount, r is rate, and t is time units that have passed since the initial date.</p>
+<p>Interest type list lets you choose the time units for the interest calculation. Available options are: None, Daily, Weekly, Bi-Weekly, Monthly, or Annual. Daily or weekly interest can rock up very significant interest.</p>
+<p>At last, choose the due date. By default, it is indefinite. If the debt is past due, it will show up as Overdue in the list.</p>
+<h1>Contacts</h1>
+<h2>Overview</h2>
+<p>Contacts screen shows the available contacts that you can use when you create a debt record. The contacts list shows the following information: name, phone number, and rating of the contact. The circle with the first letter of the contact's name will change color depending on the rating.</p>
+<p>To delete a contact, swipe it off the screen. To edit a contact, tap on it and hit the Modify button.</p>
+<p>If a contact is deleted, any records that use the contact will be deleted as well, including payment history records.</p>
+<h2>Add or modify a contact</h2>
+<p>To add a contact, hit the plus icon on the top right of the screen. To edit an existing contact, tap on it and hit the Modify button.</p>
+<p>Adding a new record is self-explanatory. First, enter the first and last (optional) name of the person. Next, set their rating - i.e. how reliable they are. Finally, add any known phone numbers of that person.</p>
+<p>There is also an option to pick a person from contacts. Just hit the Pick button, grant the CONTACTS permission, and choose the person from the list. First and last name, and all known phone numbers will be imported. The app checks for duplicate phone numbers, but in some cases it can import duplicates; for example, if a contact has two same phone numbers, but one is prefixed with +1 and the other one isn't, both will be imported. To delete a phone number, swipe it off the screen.</p>
+<h1>Payment History</h1>
+<h2>Overview</h2>
+<p>Payment history shows the information about past transactions. The information is shown as follows: contact's name, payment amount/nonmonetary transaction, transaction date, Final indicator, and the borrower/creditor indicator. The borrower/creditor indicator is a dollar sign; a green dollar sign indicated a borrower payment, and the red dollar sign is a creditor payment. The Final indicator means that the debt has been paid in full.</p>
+<p>To delete a history record, swipe it off the screen. Deleting a history record will undo a partial transaction for calculation purposes; if the history record is marked Final, deleting it will not restore a debt record. You cannot modify a history record.</p>
+<p>To view history record details, tap on it.<p>
+<h1>App Settings</h1>
+<h2>Show with interest</h2>
+<p>This option alters the way the debt records are displayed. When it is enabled, the debt value in the Borrowers or Creditors list is displayed with all the interest already added. When this option is disabled, only the initial debt is displayed in the list, and you have to tap on the record to see the details, which will include the interest and the total debt.</p>
+<p>If you have a large amount of active debt records, it might take longer to populate the list if Show with interest option is enabled. If you have a phone from the last 3-4 years, there should be no noticeable difference with normal usage.</p>
+<h1>License information</h1>
+<p>Loan Shark :: Copyright 2020 Oleg Klyushnik<p>
+
+<p>Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at<p>
+
+    <p>http://www.apache.org/licenses/LICENSE-2.0</p>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+<p>Any third-party modules used in Loan Shark are licensed under their respective licenses.</p>
+</body>
+</html>

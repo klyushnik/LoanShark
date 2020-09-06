@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectResources">
+    <resource url="http://schemas.android.com/apk/res-auto" location="$USER_HOME$/.AndroidStudio3.4/system/extResources/daf2224a_res-auto.xml" />
+    <resource url="http://schemas.android.com/apk/res/android" location="$USER_HOME$/.AndroidStudio3.4/system/extResources/ba5641b2_android.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

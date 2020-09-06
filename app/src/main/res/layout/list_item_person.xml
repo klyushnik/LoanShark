@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listPerson_rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDialogBackground"
+    android:clipToPadding="false"
+    android:paddingStart="12dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="0dp">
+
+    <TextView
+        android:id="@+id/listPerson_riskLevelTextView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/risk_level_bg"
+        android:backgroundTint="@color/colorGreen"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listPerson_nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Benedict Cumberbatch"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listPerson_riskLevelTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/listPerson_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:numStars="5"
+        android:rating="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listPerson_nameTextView" />
+
+    <TextView
+        android:id="@+id/listPerson_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:text="9165555555"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/listPerson_riskLevelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/listPerson_nameTextView" />
+
+    <TextView
+        android:id="@+id/listPerson_othersText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingEnd="10dp"
+        android:textColor="@color/colorOrange"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/listPerson_rating"
+        app:layout_constraintStart_toEndOf="@+id/listPerson_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/listPerson_nameTextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="-12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listPerson_phoneNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
